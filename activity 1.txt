@@ -1,0 +1,93 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+                     1. Multiplexing: A Paradigm Shift
+
+One of the groundbreaking features introduced in HTTP/2 is multiplexing. In HTTP/1.1, each request and response occupied a dedicated connection, leading to inefficiencies and latency issues. HTTP/2, on the other hand, allows multiple streams of data to be sent and received simultaneously over a single connection. This multiplexing capability significantly enhances the overall performance, reducing latency and improving the user experience.
+
+                     2. Header Compression: A Leaner Approach
+
+In HTTP/1.1, headers were sent in plaintext for every request and response. This led to increased overhead and slower performance, especially when dealing with multiple requests. HTTP/2 addresses this issue by employing header compression techniques, resulting in a more efficient use of bandwidth. The use of Huffman coding and a dedicated header compression table significantly reduces the size of headers, contributing to faster data transmission.
+
+                     3.Binary Protocol: Streamlining Communication
+
+While HTTP/1.1 relied on a text-based format, HTTP/2 embraces a binary protocol. This change simplifies parsing and reduces errors in data transmission. The binary format is more compact and, combined with other optimizations, contributes to a more streamlined communication process between clients and servers.
+
+                      4.Server Push: Proactive Resource Loading
+
+Another notable enhancement in HTTP/2 is the introduction of server push. In HTTP/1.1, a client had to request each resource individually, leading to additional round-trip times. With server push, the server can proactively push resources to the client before they are explicitly requested. This feature significantly accelerates the loading of web pages, especially for complex websites with numerous assets.
+
+                      5.Connection Handling: A Persistent Advantage
+
+HTTP/1.1 relied on multiple connections to fetch resources in parallel, leading to the well-known "head-of-line blocking" issue. HTTP/2 eliminates this problem with its multiplexing capability, allowing multiple streams within a single connection. Moreover, HTTP/2 connections are inherently persistent, reducing the need to repeatedly establish and terminate connections for each request.
+
+                       6.Backward Compatibility: Smooth Transition
+
+To ensure a smooth transition, HTTP/2 is designed to be backward-compatible with HTTP/1.1. This means that servers supporting HTTP/2 can communicate with clients still using the older protocol. The negotiation between the client and server determines whether to use HTTP/1.1 or upgrade to the more efficient HTTP/2.
+
+2.Write a blog about objects and its internal representation in Javascript
+                    1. Objects: The Bedrock of JavaScript
+
+At the core of JavaScript lies its object-oriented nature. Almost everything in JavaScript is an object, and this includes arrays, functions, and even the global object. Objects in JavaScript are collections of key-value pairs, providing a flexible and intuitive way to structure and organize data.
+
+                    2. Properties and Methods: Building Blocks of Objects
+
+Objects consist of properties and methods. Properties are essentially variables that hold values, while methods are functions associated with the object. The combination of properties and methods encapsulates the object's state and behavior, making it a powerful entity for modeling real-world scenarios in code.
+
+                    3.The Prototype Chain: Inheritance in JavaScript Objects
+
+JavaScript employs a prototype-based inheritance model, where objects can inherit properties and methods from other objects. Each object in JavaScript has an associated prototype object, forming a chain that extends to the root object, commonly known as Object.prototype. Understanding the prototype chain is crucial for comprehending how inheritance works in JavaScript.
+
+                    4.Object Creation: Literal Notation and Constructors
+
+Objects in JavaScript can be created using literal notation or constructors. Literal notation involves defining objects directly using curly braces, while constructors are functions used to create and initialize objects. Constructors play a vital role in setting up the internal structure of objects, including their prototype linkage.
+
+                    5.Object Property Descriptors: Fine-Tuning Access and Modification
+
+Every property in a JavaScript object comes with a set of attributes known as property descriptors. These descriptors control various aspects of the property, such as its writability, configurability, and enumerability. Understanding property descriptors allows developers to fine-tune how properties can be accessed and modified.
+
+                    6.Object Memory Management: Garbage Collection
+
+JavaScript, being a garbage-collected language, handles memory management automatically. Objects that are no longer reachable are marked for garbage collection, freeing up memory resources. This automatic memory management simplifies the development process but underscores the importance of understanding how objects are stored and referenced in memory.
+
+                    7.Immutable Objects: Preserving State
+
+While JavaScript objects are mutable by default, developers can create immutable objects to preserve state and ensure data integrity. Immutability is achieved by preventing changes to object properties after their initial assignment. Libraries like Immutable.js facilitate the creation and manipulation of immutable data structures in JavaScript.
+
+
+3.codekata practice
+                 1. Start Simple: Begin with straightforward exercises that focus on a specific concept. As you gain confidence, gradually tackle more complex problems.
+
+                 2. Practice Regularly: Consistency is key. Set aside dedicated time for CodeKata practice regularly to build and reinforce your skills.
+
+                 3. Seek Feedback: Share your solutions with others or seek feedback from more experienced developers. Learning from others' perspectives can be invaluable.
+
+                 4. Explore Multiple Languages: Try solving CodeKata exercises in different programming languages. This broadens your understanding of language-specific features and idioms.
+
+                 5. Use Test-Driven Development (TDD): Practice writing tests before implementing your solution. TDD can help you write more reliable and maintainable code.
+
+                 6. Reflect and Refactor: After completing a kata, reflect on your solution. Consider ways to refactor and improve your code. Continuous improvement is a fundamental aspect of deliberate practice.
+
+4.Read about IP address, port, HTTP methods, MAC address
+                 1. IP Address (Internet Protocol Address):
+
+An IP address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main purposes: identifying the host or network interface and providing the location/address of the device in the network. There are two primary versions of IP addresses in use today: IPv4 (32-bit) and IPv6 (128-bit), with IPv6 being introduced to address the limitations of IPv4, such as the exhaustion of available addresses.
+
+                 2.Port:
+
+In computer networking, a port is a communication endpoint that enables different applications or services running on a single host to share a single physical or logical connection to the outside world. Ports are identified by numbers and are used in combination with IP addresses to direct network traffic to specific applications or processes running on a device. For example, HTTP typically uses port 80, while HTTPS uses port 443.
+
+                 3. HTTP Methods (HTTP Request Methods):
+
+Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web. HTTP methods, also known as HTTP request methods, specify the action to be performed on a resource identified by a URL. Some common HTTP methods include:
+
+GET: Retrieves data from a specified resource.
+POST: Submits data to be processed to a specified resource.
+PUT: Updates a specified resource.
+DELETE: Deletes a specified resource.
+PATCH: Partially modifies a specified resource.
+These methods define the actions that can be performed on web servers and guide how clients interact with server resources.
+
+                 4. MAC Address (Media Access Control Address):
+
+A MAC address is a unique identifier assigned to network interfaces for communications on a network segment. Unlike IP addresses, which can change based on location or network, a MAC address is typically hard-coded into the network interface hardware by the manufacturer. It's used for identifying devices within a local network and is essential for data transmission within the network at the data link layer of the OSI model. MAC addresses are represented as a series of hexadecimal digits, often displayed in six pairs separated by colons (e.g., 00:1A:2B:3C:4D:5E).
+
+Understanding these fundamental components of networking and internet communication is crucial for anyone working with computer networks, web development, or IT infrastructure.
